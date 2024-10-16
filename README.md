@@ -2,7 +2,12 @@
 
 ## Drawing on surface
 
+Can press tip down to draw on a surface in 2D.
+
 ## Drawing in air
 
-## Drawing with joystick
+Can hold a button to draw in the air in 3D.
 
+## Drawing with joystick and line trace
+
+Can use the joystick to control lines projected onto surface when button is held
