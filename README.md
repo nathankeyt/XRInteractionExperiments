@@ -11,3 +11,5 @@ Can hold a button to draw in the air in 3D.
 ## Drawing with joystick and line trace
 
 Can use the joystick to control lines projected onto surface when button is held
+
+[![alt text](https://github.com/nathankeyt/XRInteractionExperiments/main/IMG.png?raw=true)
