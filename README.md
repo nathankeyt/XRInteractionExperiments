@@ -1,10 +1,10 @@
 # XRInteractionExperiments - Drawing
 
-## Drawing on surface
+## Drawing on surface with hand physically
 
 Can press tip down to draw on a surface in 2D.
 
-## Drawing in air
+## Drawing on surface with hand and line trace
 
 Can hold a button to draw in the air in 3D.
 
