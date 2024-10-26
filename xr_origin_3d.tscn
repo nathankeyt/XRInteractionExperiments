@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://y45fmxul5t1k"]
+
+[ext_resource type="PackedScene" uid="uid://bpdj5njb8nhot" path="res://addons/godot-xr-tools/hands/scenes/highpoly/left_fullglove_hand.tscn" id="1_383n8"]
+[ext_resource type="Script" path="res://draw.gd" id="2_gdp8x"]
+[ext_resource type="PackedScene" uid="uid://d1tl07geqm5xq" path="res://addons/godot-xr-tools/hands/scenes/highpoly/right_fullglove_hand.tscn" id="3_mpqr8"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a18u4"]
+albedo_color = Color(1, 1, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ck83g"]
+albedo_color = Color(1, 1, 0, 1)
+
+[node name="XROrigin3D" type="XROrigin3D"]
+visible = false
+
+[node name="XRCamera3D" type="XRCamera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7, 0)
+
+[node name="LeftHand" type="XRController3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.459215, 0.751372, 0)
+tracker = &"left_hand"
+
+[node name="LeftHand" parent="LeftHand" instance=ExtResource("1_383n8")]
+hand_material_override = SubResource("StandardMaterial3D_a18u4")
+
+[node name="RightHand" type="XRController3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.524246, 0.749641, 0.00318289)
+tracker = &"right_hand"
+script = ExtResource("2_gdp8x")
+
+[node name="RightHand" parent="RightHand" instance=ExtResource("3_mpqr8")]
+hand_material_override = SubResource("StandardMaterial3D_ck83g")
+
+[node name="RayCast3D" type="RayCast3D" parent="RightHand"]
+target_position = Vector3(0, 0, -5)
