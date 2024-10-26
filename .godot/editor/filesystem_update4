@@ -1,0 +1,10 @@
+res://main.tscn
+res://openxr_action_map.tres
+res://addons/godot-xr-tools/hands/animations/left/hand_blend_tree.tres
+res://addons/godot-xr-tools/hands/animations/right/hand_blend_tree.tres
+res://addons/godot-xr-tools/xr/start_xr.tscn
+res://paper.tscn
+res://demo/demo.tscn
+res://debug_log.tscn
+res://draw.gd
+res://root_node_adder.gd
