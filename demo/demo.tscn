@@ -7,7 +7,7 @@
 albedo_color = Color(0, 0, 0, 1)
 emission_energy_multiplier = 6.19
 
-[sub_resource type="ImmediateMesh" id="ImmediateMesh_mff4e"]
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_r1pxb"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_47h4w"]
 
@@ -22,7 +22,7 @@ sky = SubResource("Sky_mouyc")
 
 [node name="LineRenderer3D" type="MeshInstance3D" parent="."]
 material_override = SubResource("StandardMaterial3D_alt08")
-mesh = SubResource("ImmediateMesh_mff4e")
+mesh = SubResource("ImmediateMesh_r1pxb")
 script = ExtResource("2_c14b5")
 points = Array[Vector3]([Vector3(0, 0, 0), Vector3(0, 1, 0), Vector3(0, 3, 4)])
 

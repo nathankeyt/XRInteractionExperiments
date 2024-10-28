@@ -36,7 +36,7 @@
         android:requestLegacyExternalStorage="false" >
         <meta-data
             android:name="com.oculus.supportedDevices"
-            android:value="quest2|quest3|questpro" />
+            android:value="quest|quest2|quest3|questpro" />
 
         <activity
             android:name="com.godot.game.GodotApp"

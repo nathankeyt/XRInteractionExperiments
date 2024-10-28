@@ -56,11 +56,11 @@
 36        android:requestLegacyExternalStorage="false" >
 36-->/Users/nathankeyt/new-game-project/android/build/AndroidManifest.xml:25:9-53
 37        <meta-data
-37-->/Users/nathankeyt/new-game-project/android/build/src/debug/AndroidManifest.xml:21:9-125
+37-->/Users/nathankeyt/new-game-project/android/build/src/debug/AndroidManifest.xml:21:9-131
 38            android:name="com.oculus.supportedDevices"
 38-->/Users/nathankeyt/new-game-project/android/build/src/debug/AndroidManifest.xml:21:41-83
-39            android:value="quest2|quest3|questpro" />
-39-->/Users/nathankeyt/new-game-project/android/build/src/debug/AndroidManifest.xml:21:84-122
+39            android:value="quest|quest2|quest3|questpro" />
+39-->/Users/nathankeyt/new-game-project/android/build/src/debug/AndroidManifest.xml:21:84-128
 40
 41        <activity
 41-->/Users/nathankeyt/new-game-project/android/build/AndroidManifest.xml:37:9-54:20

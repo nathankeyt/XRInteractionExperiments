@@ -18,7 +18,7 @@
         tools:replace="android:allowBackup,android:appCategory,android:isGame,android:hasFragileUserData,android:requestLegacyExternalStorage"
         tools:ignore="GoogleAppIndexingWarning">
 
-        <meta-data tools:node="replace" android:name="com.oculus.supportedDevices" android:value="quest2|quest3|questpro" />
+        <meta-data tools:node="replace" android:name="com.oculus.supportedDevices" android:value="quest|quest2|quest3|questpro" />
 
         <activity android:name="com.godot.game.GodotApp" tools:replace="android:screenOrientation,android:excludeFromRecents,android:resizeableActivity" tools:node="mergeOnlyAttributes" android:excludeFromRecents="false" android:screenOrientation="landscape" android:resizeableActivity="true">
             <intent-filter>

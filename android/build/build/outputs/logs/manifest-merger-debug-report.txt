@@ -174,12 +174,12 @@ ADDED from /Users/nathankeyt/new-game-project/android/build/AndroidManifest.xml:
 	android:name
 		ADDED from /Users/nathankeyt/new-game-project/android/build/AndroidManifest.xml:52:27-74
 meta-data#com.oculus.supportedDevices
-ADDED from /Users/nathankeyt/new-game-project/android/build/src/debug/AndroidManifest.xml:21:9-125
+ADDED from /Users/nathankeyt/new-game-project/android/build/src/debug/AndroidManifest.xml:21:9-131
 REJECTED from [godotopenxrmeta-debug.aar] /Users/nathankeyt/.gradle/caches/transforms-3/f18c80641bfab360187fa2f4852d25b6/transformed/jetified-godotopenxrmeta-debug/AndroidManifest.xml:16:9-18:54
 	tools:node
 		ADDED from /Users/nathankeyt/new-game-project/android/build/src/debug/AndroidManifest.xml:21:20-40
 	android:value
-		ADDED from /Users/nathankeyt/new-game-project/android/build/src/debug/AndroidManifest.xml:21:84-122
+		ADDED from /Users/nathankeyt/new-game-project/android/build/src/debug/AndroidManifest.xml:21:84-128
 	android:name
 		ADDED from /Users/nathankeyt/new-game-project/android/build/src/debug/AndroidManifest.xml:21:41-83
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER+category:name:com.oculus.intent.category.VR+category:name:org.khronos.openxr.intent.category.IMMERSIVE_HMD

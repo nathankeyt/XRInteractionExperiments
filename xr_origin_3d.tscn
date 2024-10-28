@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://y45fmxul5t1k"]
+[gd_scene load_steps=9 format=3 uid="uid://y45fmxul5t1k"]
 
 [ext_resource type="PackedScene" uid="uid://bpdj5njb8nhot" path="res://addons/godot-xr-tools/hands/scenes/highpoly/left_fullglove_hand.tscn" id="1_383n8"]
 [ext_resource type="Script" path="res://draw.gd" id="2_gdp8x"]
@@ -10,8 +10,17 @@ albedo_color = Color(1, 1, 0, 1)
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ck83g"]
 albedo_color = Color(1, 1, 0, 1)
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4hh0x"]
+shading_mode = 0
+albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_dg8bj"]
+material = SubResource("StandardMaterial3D_4hh0x")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3xweb"]
+size = Vector3(0.0784225, 0.147949, 0.173279)
+
 [node name="XROrigin3D" type="XROrigin3D"]
-visible = false
 
 [node name="XRCamera3D" type="XRCamera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7, 0)
@@ -23,13 +32,38 @@ tracker = &"left_hand"
 [node name="LeftHand" parent="LeftHand" instance=ExtResource("1_383n8")]
 hand_material_override = SubResource("StandardMaterial3D_a18u4")
 
-[node name="RightHand" type="XRController3D" parent="."]
+[node name="RightHand" type="XRController3D" parent="." node_paths=PackedStringArray("ray_cast_3D", "hand", "pivot", "hold_point")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.524246, 0.749641, 0.00318289)
 tracker = &"right_hand"
 script = ExtResource("2_gdp8x")
+ray_cast_3D = NodePath("Pivot/RayCast3D")
+hand = NodePath("RightHand")
+pivot = NodePath("Pivot")
+sensitivity = 0.25
+hold_point = NodePath("HoldPoint")
 
 [node name="RightHand" parent="RightHand" instance=ExtResource("3_mpqr8")]
 hand_material_override = SubResource("StandardMaterial3D_ck83g")
 
-[node name="RayCast3D" type="RayCast3D" parent="RightHand"]
+[node name="Pivot" type="Node3D" parent="RightHand"]
+
+[node name="RayCast3D" type="RayCast3D" parent="RightHand/Pivot"]
 target_position = Vector3(0, 0, -5)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RightHand/Pivot"]
+transform = Transform3D(0.0256826, 0, 0, 0, -1.08454e-07, 0.0256826, 0, -2.48114, -1.12262e-09, 0, 0, -2.47761)
+visible = false
+mesh = SubResource("CylinderMesh_dg8bj")
+
+[node name="Area3D" type="Area3D" parent="RightHand"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RightHand/Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0202538, -0.0432129, 0.0857651)
+shape = SubResource("BoxShape3D_3xweb")
+
+[node name="HoldPoint" type="Node3D" parent="RightHand"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0129889, -0.00726158)
+
+[connection signal="body_entered" from="RightHand/Area3D" to="RightHand" method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="RightHand/Area3D" to="LeftHand/LeftHand" method="_on_area_3d_body_exited"]
+[connection signal="body_exited" from="RightHand/Area3D" to="RightHand" method="_on_area_3d_body_exited"]

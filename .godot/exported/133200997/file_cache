@@ -1,5 +1,5 @@
-res://main.tscn::c6f3cbedbbda01e13e9231259e640f64::1729191248::res://.godot/exported/133200997/export-3070c538c03ee49b7677ff960a3f5195-main.scn
-res://openxr_action_map.tres::96ef8110dfbdf0ee0d163daada2dfad9::1729191129::res://.godot/exported/133200997/export-a9d757fdde490682a87dc1ad8c7d3357-openxr_action_map.res
+res://main.tscn::3588fd47df70c45d04689792bc8c13d7::1730154128::res://.godot/exported/133200997/export-3070c538c03ee49b7677ff960a3f5195-main.scn
+res://openxr_action_map.tres::96ef8110dfbdf0ee0d163daada2dfad9::1730053073::res://.godot/exported/133200997/export-a9d757fdde490682a87dc1ad8c7d3357-openxr_action_map.res
 res://addons/godot-xr-tools/audio/area_audio.tscn::f9cca03684a2a0b98d0f3b5180ed6f64::1729185580::res://.godot/exported/133200997/export-5cd45c730cf997435777b25d105911a8-area_audio.scn
 res://addons/godot-xr-tools/audio/pickable_audio.tscn::de72fd0519fb7018b9fc89467e4fe3b6::1729185580::res://.godot/exported/133200997/export-c8b9b2ff6bc2d1ecbd0a3af51cebf414-pickable_audio.scn
 res://addons/godot-xr-tools/audio/surface_audio.tscn::e6f7ff5a4c59a0ac864053a539ce4727::1729185580::res://.godot/exported/133200997/export-36d4a11bc5808dfbfd2d908643d5af0b-surface_audio.scn
@@ -27,9 +27,9 @@ res://addons/godot-xr-tools/functions/movement_wall_walk.tscn::2a034be100572e419
 res://addons/godot-xr-tools/functions/movement_wind.tscn::24c1af648c78e3ddc00d937d102f1a38::1729185582::res://.godot/exported/133200997/export-a21ceb3cdde66b7e33f164a687e8c62e-movement_wind.scn
 res://addons/godot-xr-tools/functions/movement_world_grab.tscn::d9021094f13019ba56dee648204999ce::1729185582::res://.godot/exported/133200997/export-7afe4af13a8d6145adf403808af4e04e-movement_world_grab.scn
 res://addons/godot-xr-tools/hands/animations/left/AnimationPlayer.tscn::c3a742311771779238c4cfd7d6bae92c::1729185581::res://.godot/exported/133200997/export-6be1df8df9b46d097bde97e0e871f98a-AnimationPlayer.scn
-res://addons/godot-xr-tools/hands/animations/left/hand_blend_tree.tres::82f3b3900eb1c5bf2918647d84d0268b::1729191129::res://.godot/exported/133200997/export-897118bb8074166298804af3978a03e9-hand_blend_tree.res
+res://addons/godot-xr-tools/hands/animations/left/hand_blend_tree.tres::82f3b3900eb1c5bf2918647d84d0268b::1730148115::res://.godot/exported/133200997/export-897118bb8074166298804af3978a03e9-hand_blend_tree.res
 res://addons/godot-xr-tools/hands/animations/right/AnimationPlayer.tscn::0902fcafe80af05801c61f6a936d9e69::1729185580::res://.godot/exported/133200997/export-6c340b06e785d996b1823d614d9f4c9d-AnimationPlayer.scn
-res://addons/godot-xr-tools/hands/animations/right/hand_blend_tree.tres::a68cea9b8c5842a57fcdf1b67883085b::1729191129::res://.godot/exported/133200997/export-a5d873331a26fb1b0106799bad778aa1-hand_blend_tree.res
+res://addons/godot-xr-tools/hands/animations/right/hand_blend_tree.tres::a68cea9b8c5842a57fcdf1b67883085b::1730148115::res://.godot/exported/133200997/export-a5d873331a26fb1b0106799bad778aa1-hand_blend_tree.res
 res://addons/godot-xr-tools/hands/materials/african_hands.tres::0b1e912de2b05f00263887bb3da02fe8::1729185581::res://.godot/exported/133200997/export-518ac0d9ea2110c7fdcd4881a4ff99ed-african_hands.res
 res://addons/godot-xr-tools/hands/materials/african_hands_realistic.tres::bad869dc3781e86c7d7b226a408d2715::1729185581::res://.godot/exported/133200997/export-0f1c1b848552ead5014a4c214d67cb74-african_hands_realistic.res
 res://addons/godot-xr-tools/hands/materials/caucasian_hand.tres::b2f1680e446145030526b892a6b07c77::1729185581::res://.godot/exported/133200997/export-abf59e324f9edf8912bec80dba57b0e0-caucasian_hand.res
@@ -112,7 +112,9 @@ res://addons/godot-xr-tools/staging/scene_base.tscn::f47d2bdf3f5bc8bda288dfad272
 res://addons/godot-xr-tools/staging/staging.tscn::ba58cb70a053512a0b4a049aa1574406::1729185582::res://.godot/exported/133200997/export-d1132cee509e0c1380b615137cd3bbe0-staging.scn
 res://addons/godot-xr-tools/staging/staging_env.tres::b7473dffb50e2081920af779e82e3a81::1729185582::res://.godot/exported/133200997/export-0b93ef9408d87d39085ade00f1b95127-staging_env.res
 res://addons/godot-xr-tools/user_settings/user_settings_ui.tscn::5866c7a98a0d025cfe099bbf97b93502::1729185584::res://.godot/exported/133200997/export-ab2a02b46b1461b01b11fbb15c89c180-user_settings_ui.scn
-res://addons/godot-xr-tools/xr/start_xr.tscn::2a7f65fb8ac9a6a91676085abf3fcfce::1729191248::res://.godot/exported/133200997/export-7fd0d6b3a962be10043f7b02735e295c-start_xr.scn
-res://demo/demo.tscn::1418cfdd2ca0d98c3a97d8f4bc33f7d5::1729191248::res://.godot/exported/133200997/export-e3a12d36170be01a1b2f67fcfb7ad0e8-demo.scn
-res://paper.tscn::47bea0829b0a94be38a656e6bd919cf9::1729191248::res://.godot/exported/133200997/export-5958e825851fa74369066c3b99dc056a-paper.scn
-res://debug_log.tscn::62cdfde0c83f1380acdfeab6a5ef307f::1729191248::res://.godot/exported/133200997/export-5a5dccd08054767b42f70ccb1d7c0c05-debug_log.scn
+res://addons/godot-xr-tools/xr/start_xr.tscn::2a7f65fb8ac9a6a91676085abf3fcfce::1730154128::res://.godot/exported/133200997/export-7fd0d6b3a962be10043f7b02735e295c-start_xr.scn
+res://demo/demo.tscn::ebce2deba4bd70a7829a76c0fa5de1ae::1730154128::res://.godot/exported/133200997/export-e3a12d36170be01a1b2f67fcfb7ad0e8-demo.scn
+res://paper.tscn::47bea0829b0a94be38a656e6bd919cf9::1730154128::res://.godot/exported/133200997/export-5958e825851fa74369066c3b99dc056a-paper.scn
+res://debug_log.tscn::62cdfde0c83f1380acdfeab6a5ef307f::1730154128::res://.godot/exported/133200997/export-5a5dccd08054767b42f70ccb1d7c0c05-debug_log.scn
+res://character_body_3d.tscn::8554225996f4207af7db18c91d41dbd9::1730154128::res://.godot/exported/133200997/export-b77f9875c13193b3a3188a9831caacdd-character_body_3d.scn
+res://xr_origin_3d.tscn::d4c3439acbb18cb4c3dc304d8450fc6b::1730154128::res://.godot/exported/133200997/export-cd76970c67a8b1ae6a714ddba9ac2142-xr_origin_3d.scn
